@@ -21,7 +21,8 @@ Author: magicpin AI Challenge Team
 # =============================================================================
 
 # Your bot's URL (where your bot is running)
-BOT_URL = "http://localhost:8080"
+import os
+BOT_URL = os.environ.get("BOT_URL", "https://magicpin-ai-submission-y7vt.onrender.com")
 
 # Choose your LLM provider: "openai", "anthropic", "gemini", "deepseek", "groq", "ollama", "openrouter"
 LLM_PROVIDER = "gemini"
