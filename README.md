@@ -118,7 +118,7 @@ curl -s https://magicpin-ai-submission-y7vt.onrender.com/v1/healthz
 ```
 *Expected Response (200 OK):*
 ```json
-{"status":"ok","uptime_seconds":512,"version":"2.1.0","context_count":0}
+{"status":"ok","uptime_seconds":120,"contexts_loaded":{"category":0,"merchant":0,"customer":0,"trigger":0}}
 ```
 
 #### 2. Service Metadata
@@ -128,11 +128,11 @@ curl -s https://magicpin-ai-submission-y7vt.onrender.com/v1/metadata
 *Expected Response (200 OK):*
 ```json
 {
-  "service":"vera-omni",
-  "team_name":"Vera-Omni Elite (DeepMind Engineered)",
-  "version":"2.1.0",
-  "model_name":"openai/gpt-oss-120b",
-  "capabilities":["context_ingestion","tick_evaluation","multi_turn_reply","conversation_teardown"]
+  "team_name": "Vera-Omni Elite (DeepMind Engineered)",
+  "team_members": ["Aditya", "Antigravity AI"],
+  "model": "openai/gpt-oss-120b",
+  "approach": "Dual-Brain Hybrid Architecture: Ultra-Fast Groq 120B/20B + Gemini Flash with Grounded Deterministic Semantic Fallback & Replay-Proof Multi-Turn Machine",
+  "version": "2.0.0"
 }
 ```
 
